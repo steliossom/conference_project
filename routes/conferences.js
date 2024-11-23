@@ -239,9 +239,7 @@ router.get('/search', PCCMiddleware, async (req, res) => {
       papers: conference.papers.map(paper => ({
         id: paper._id,
         title: paper.title,
-        // Include other paper details as needed
       })),
-      // Add other fields as needed
     }));
 
     res.json(conferencesResponse);
